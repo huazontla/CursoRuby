@@ -7,9 +7,12 @@ class HolaMundo
 	def initialize()
 	end
 	def saluda()
-		valor1 = 1
-		valor2 = 2
-		puts valor1 + valor2 # Imprimir el resultado de la suma
+		#convertir valor de variable en Int
+		cadena = "1"
+		cadena = cadena.to_i # to_i pasar a Int, to_f Pasar a Flotante, to_str Pasar a String
+		numero = 2
+		puts cadena + numero
+
 	end
 end
 # Creando el objeto de la clase HolaMundo
