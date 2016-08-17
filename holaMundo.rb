@@ -5,11 +5,21 @@ class HolaMundo
 		
 	end
 	def saluda()
-		#unless sirve al contrario de un IF, la condicion debe ser falsa
-		 bloqueado = "Chango"
-		 unless bloqueado == "Pedro"
-		 	puts "Bienvenido a la Fiesta"
-		 end
+		#sentencia CASE similar a SWITCH
+		sustantivo = "Twittersdsd"
+		respuesta = case sustantivo
+		when "HolaBrutal", "Pollazo" then "Otras cosas"
+		when "Facebook", "Twitter" then "redes sociales"
+		else "No se"
+		end
+		puts respuesta
+			
+
+
+
+
+
+
 	end
 end
 # Creando el objeto de la clase HolaMundo
