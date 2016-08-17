@@ -1,24 +1,25 @@
-=begin
-	En esta zona se hace la definicion de la clase
-	Hola Mundo y se colocan el metodo constructor
-	y se crea un metodo para saludar saluda(d)
-=end
 
-#las variables globales se crean con un $ al principio
-$ejemplo = "Esto es una variable Global" 
 class HolaMundo
 
 	def initialize()
-		# variables locales, se crean solo escribiendo el nombre de la variable, solo pueden ser usadas dentro del metodo donde fueron creadas
-		# variables de instancia se crean con un @ al comienzo de la variable y solo se pueden usar dentro de la clase donde fueron creadas
-		# variables globales se crean con un $ al comienzo de la variable y pueden ser utilizadas en cualquier parte del codigo	
-		ejemplo = "soy una variable local"
-		@ejemplo = "soy una variable de instancia"
+		
 	end
 	def saluda()
-		puts ejemplo
-		puts $ejemplo
-		puts @ejemplo
+		# Operadores Aritmeticos
+		suma = 2 + 3 #suma
+		resta = 2 - 3 #resta
+		multiplicacion = 2 * 3 #multiplicacion
+		division = 2/3  #division
+		exponente = 2**3 # eleveando al cubo
+		variable = (10+2)/(3*2) # operaciones 
+
+
+		puts suma
+		puts resta
+		puts multiplicacion
+		puts division
+		puts exponente
+		puts variable
 
 	end
 end
