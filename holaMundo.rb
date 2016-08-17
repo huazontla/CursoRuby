@@ -25,5 +25,5 @@ end
 # Creando el objeto de la clase HolaMundo
 objeto = HolaMundo.new()
 
-objeto.saluda()
+objeto.saluda
 
