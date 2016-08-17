@@ -5,20 +5,16 @@ class HolaMundo
 		
 	end
 	def saluda()
-		#sentencia CASE similar a SWITCH
-		sustantivo = "Twittersdsd"
-		respuesta = case sustantivo
-		when "HolaBrutal", "Pollazo" then "Otras cosas"
-		when "Facebook", "Twitter" then "redes sociales"
-		else "No se"
-		end
-		puts respuesta
-			
-
-
-
-
-
+		# if anidados usando elsif
+		i = 0
+		if i > 0
+			puts "La variable es Positiva"
+		elsif i < 0 
+			puts "La variable es negativa"
+		else
+			puts "La variable es Cero 0"
+				
+		end	
 
 	end
 end
