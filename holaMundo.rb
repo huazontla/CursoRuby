@@ -5,13 +5,11 @@ class HolaMundo
 		
 	end
 	def saluda()
-		hora = 10
-		if hora < 12
-			puts "Buenos días"
-		else
-			puts "Buenas tardes"
-		end
-
+		#unless sirve al contrario de un IF, la condicion debe ser falsa
+		 bloqueado = "Chango"
+		 unless bloqueado == "Pedro"
+		 	puts "Bienvenido a la Fiesta"
+		 end
 	end
 end
 # Creando el objeto de la clase HolaMundo
