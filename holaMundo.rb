@@ -9,7 +9,7 @@ class HolaMundo
 	def saluda()
 		#convertir valor de variable en Int
 		cadena = "1"
-		cadena = cadena.to_i # to_i pasar a Int, to_f Pasar a Flotante, to_str Pasar a String
+		cadena = cadena.to_i # to_i pasar a Int, to_f Pasar a Flotante, to_str o to_s Pasar a String
 		numero = 2
 		puts cadena + numero
 
