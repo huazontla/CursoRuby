@@ -5,22 +5,21 @@ class HolaMundo
 		
 	end
 	def saluda()
-		# Operadores Aritmeticos
-		suma = 2 + 3 #suma
-		resta = 2 - 3 #resta
-		multiplicacion = 2 * 3 #multiplicacion
-		division = 2/3  #division
-		exponente = 2**3 # eleveando al cubo
-		variable = (10+2)/(3*2) # operaciones 
+		resultado = 2 + 3
+		#concatenar con variables
+		print "La suma de 2 + 3 = #{resultado}"
 
+		cadena = "hola"
+		cadena << "mundo" #agregar cadena
+		cadena.concat("pollo") #concatenar al final de la cadena
 
-		puts suma
-		puts resta
-		puts multiplicacion
-		puts division
-		puts exponente
-		puts variable
+		
+		variable = "pollo"
+		variable.each_char{|c| print c, "\n"}
 
+		chain = "codificando"
+	chain =	chain.center(40, '-') # imprimir una cadena
+		puts chain
 	end
 end
 # Creando el objeto de la clase HolaMundo
