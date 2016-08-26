@@ -5,17 +5,10 @@ class HolaMundo
 		
 	end
 	def saluda()
-		# if anidados usando elsif
-		i = 0
-		if i > 0
-			puts "La variable es Positiva"
-		elsif i < 0 
-			puts "La variable es negativa"
-		else
-			puts "La variable es Cero 0"
-				
-		end	
-
+		#cliclo for
+			for i in(1..10)
+				puts i
+			end
 	end
 end
 # Creando el objeto de la clase HolaMundo
