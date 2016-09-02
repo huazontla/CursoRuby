@@ -5,14 +5,11 @@ class HolaMundo
 		
 	end
 	def saluda()
-		# Entrada de Datos
-		print "Ingresa tu Nombre"
-		nombre = gets # Metodo para obtener lo que escriban
-		
+		# Arreglos 
+		variable = [] #creando un arreglo vacio y asignarlo a la variable "variable"
 
-
-		apellido = ARGV[0] # Enviar Parametro mediante la consola e imprimirlo (para ejecutarlo se pone: ruby nombreArchivo.rb "parametro")
-		print "Hola "+ nombre 
+		arreglo  = [1,2,3].push("payaso") # metodo push() para agregar un nuevo elemento al arreglo
+		puts arreglo[3] # Imprimir un elemento del arreglo
 
 	end
 end
