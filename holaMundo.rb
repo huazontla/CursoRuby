@@ -1,13 +1,40 @@
-
+	
+rescue => exception
+	
+end=end
+rescue => exception
+	
+end
 class HolaMundo
 
 	def initialize() # Metodo constructor
 		
 	end
 	def saluda()
-		20.times { |i| puts i} # imprimir 20 veces
-		1.upto(10) { |u| puts u} # imprimir desde el 1 al 10
-		10.downto(1) { |o| puts o} # imprimir desde el 10 al 1
+	# Ciclos while, until 
+		i = 0
+		begin			
+			puts i
+			i += 1
+
+		end while i<5
+
+		while i<5 do
+			puts i
+			i += 1
+		end
+
+
+		f = 0
+		until f>5 do
+			puts f
+			f += 1
+		end
+
+		begin 
+			puts f
+			f += 1
+		end until f>5	
 
 
 	end
