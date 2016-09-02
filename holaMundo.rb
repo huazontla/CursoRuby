@@ -1,41 +1,14 @@
-	
-rescue => exception
-	
-end=end
-rescue => exception
-	
-end
+
 class HolaMundo
 
 	def initialize() # Metodo constructor
 		
 	end
 	def saluda()
-	# Ciclos while, until 
-		i = 0
-		begin			
-			puts i
-			i += 1
-
-		end while i<5
-
-		while i<5 do
-			puts i
-			i += 1
-		end
-
-
-		f = 0
-		until f>5 do
-			puts f
-			f += 1
-		end
-
-		begin 
-			puts f
-			f += 1
-		end until f>5	
-
+		# Metodos de Salida
+		print "Hola Desde Ruby" # imprimir una cadena
+		puts "hola" # imprimir una cadena con un salto de linea al final
+		print "como estas"
 
 	end
 end
