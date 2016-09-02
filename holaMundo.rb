@@ -5,10 +5,14 @@ class HolaMundo
 		
 	end
 	def saluda()
-		# Metodos de Salida
-		print "Hola Desde Ruby" # imprimir una cadena
-		puts "hola" # imprimir una cadena con un salto de linea al final
-		print "como estas"
+		# Entrada de Datos
+		print "Ingresa tu Nombre"
+		nombre = gets # Metodo para obtener lo que escriban
+		
+
+
+		apellido = ARGV[0] # Enviar Parametro mediante la consola e imprimirlo (para ejecutarlo se pone: ruby nombreArchivo.rb "parametro")
+		print "Hola "+ nombre 
 
 	end
 end
