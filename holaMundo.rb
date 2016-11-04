@@ -24,9 +24,9 @@ class HolaMundo
 		end	
 
 		puts lamb2.call("Alfredo")
-		
 
 
+		puts "hola"
 
 
 	end
