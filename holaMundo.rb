@@ -5,35 +5,26 @@ class HolaMundo
 		
 	end
 	def saluda()
-		#creando hash o diccionarios
+		
+		# usando Lambdas
+		# son funciones anonimas
+		# son objetos, retornan un valor
 
-		cursos  = {'ruby'=>21, 'php'=>'15'}
+		lamb = lambda {|numero| numero + 1} # se almacena el lambda en la variable lamb, en la lambda se esta esperando recibir un numero y a ese numero sumarle 1
 
-		#agregar nuevo elemento al hash
-		cursos['python'] = 10
+		puts lamb.call(99) # se imprimer el lambda pasando como parametro el 99 y el resultado sera 100
 
-		#recorriendo un hash con el metodo each
-		cursos.each  do |key, value| # hay que dar 2 valores  el indice = key y el valor = value
-			puts "#{key} tiene #{value} videos " # #{variable} se usa para concatenar variable a strings
+
+		lamb2 = lambda do |nombre| # cuando se usa mas de una linea de codigo es preferente usar esta sintaxis 
+			if nombre == "Alfredo"
+				return "hola Alfredo"
+			else
+				return "hola Anonimo"
+			end		
 		end	
 
-		indices = cursos.keys # para obtener solo los indices de un hash o diccionario, devuelve un arreglo
+		puts lamb2.call("Alfredo")
 
-		for i in indices do # para recorrer el arreglo usamos for el cual va a imprimir solo los indices del hash
-			puts i
-		end
-
-
-		valores = cursos.values # para obtener solo los valores de un hash o diccionario, devuelve un arreglo
-
-		for i in valores do # para recorrer el arreglo usamos for el cual va a imprimir solo los valores del hash
-			puts i
-		end	
-
-
-
-		#imprimiendo un valor del hash usando como referencia el indice "python"
-		puts cursos['python']
 
 
 
