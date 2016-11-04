@@ -5,43 +5,35 @@ class HolaMundo
 		
 	end
 	def saluda()
-	# Recorrer Arreglos
-		arreglo = [1,2,3,4,5,6,7,8,9]
+		#creando hash o diccionarios
 
-		# Recorriendo el Arreglo usando el ciclco For
-		for i in arreglo do
+		cursos  = {'ruby'=>21, 'php'=>'15'}
+
+		#agregar nuevo elemento al hash
+		cursos['python'] = 10
+
+		#recorriendo un hash con el metodo each
+		cursos.each  do |key, value| # hay que dar 2 valores  el indice = key y el valor = value
+			puts "#{key} tiene #{value} videos " # #{variable} se usa para concatenar variable a strings
+		end	
+
+		indices = cursos.keys # para obtener solo los indices de un hash o diccionario, devuelve un arreglo
+
+		for i in indices do # para recorrer el arreglo usamos for el cual va a imprimir solo los indices del hash
+			puts i
+		end
+
+
+		valores = cursos.values # para obtener solo los valores de un hash o diccionario, devuelve un arreglo
+
+		for i in valores do # para recorrer el arreglo usamos for el cual va a imprimir solo los valores del hash
 			puts i
 		end	
 
-		# Recorriendo el Arreglo usando el ciclo Each
-		arreglo.each do  |i|
-			puts i
-		end
-
-		# Usando el metodo Map
-		# El metodo "map" sirve para: modificar cada elemento del arreglo
-		# Lo que hace es tomar cada elemento del arreglo y en este ejemplo, sumarle 1
-		# el Resultado  seria 2,3,4,5,6,7,8,9,10
-		nuevo =arreglo.map { |i| i+1 }
-		for i in nuevo do
-			puts i
-		end	
 
 
-		# Filtrar usando el metodo select
-		# En este ejemplo se filtran los numeros pares del arreglo
-		ejemplo = arreglo.select{|numero| numero % 2 == 0}
-		for i in ejemplo do
-			puts i
-		end
-
-		# Eliminar elementos con el metodo delete_if()
-		# En este ejemplo se eliminan los numeros pares y se imprimen los numeros impares
-		borrado = arreglo.delete_if{|numBorrado| numBorrado % 2 == 0}
-		for i in borrado do
-			puts i
-		end
-
+		#imprimiendo un valor del hash usando como referencia el indice "python"
+		puts cursos['python']
 
 
 
