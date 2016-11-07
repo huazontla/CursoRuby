@@ -1,7 +1,7 @@
-# para hacer uso de un archivo externo en ruby 
-# require_relative para mandar a llamar un archivo externo que esta en la misma ubicacion
-require_relative 'clsPerro.rb' # puede usar tambien solo require
+require_relative 'clsPerro.rb' # enlazamos la clase perro
 
-#crear un nuevo objeto
-obj = Perro.new() #instanciar la clase Perro
-obj.ladrar  # ejecutar el metodo ladrar de la clase Perro 
+obj = Perro.new() # creamos una nueva instancia de la clase perro
+
+puts "Ingresa tu nombre"
+nombre = gets # se almacena el nombre en la variable
+puts obj.ladrar(nombre) # ejecutamos el metodo ladrar() de la clase perro y le pasamos como parametro la variable nombre
