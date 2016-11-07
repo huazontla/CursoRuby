@@ -1,18 +1,23 @@
 class Array 
 
-	def iterar
+	def iterar(bloque)
 		self.each_with_index do |n,i|
-			self[i] = yield(n)
+			self[i]  = bloque.call(n)
 		end	
 	end	
 
 end
 
 arreglo = [1,2,3]
-arreglo.iterar do |n|
-		n**2
-end		
+arreglo2  = [10,5,6,2]
+elevarCuadrado = Proc.new do |n|
+	n**2
+end	
 
-for i in arreglo do
+arreglo.iterar(elevarCuadrado)
+
+arreglo2.iterar(elevarCuadrado)
+
+for i in arreglo2 do
 	puts i
 end
