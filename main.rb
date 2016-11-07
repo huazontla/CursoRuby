@@ -1,17 +1,22 @@
-# metodo Singleton
-# un metodo singleton es aquel que solo puede ser usado por el objeto a quien se le ha asignado el metodo
+# Clases Singleton
+# Muy similar que los metodos singleton pero en una clase, las clases singleton contienen metodos singleton
 require_relative 'clsPerro.rb'
+dog = Perro.new()
+dog2 = Perro.new()
+class << dog  # para poder declarar una clase singleton es necesario instanciar la clase anterior mente
+    def hablar
+        return "Hola Amigo Humano"
+        
+    end
+    def indio
+        puts "Soy un Indio"
+    end
+end
 
-obj = Perro.new("raya", "Frech Negro")
-objetoNuevo = Perro.new("Indio", "pastor Aleman")
+# condicional para  verificar si un objeto contiene un metodo
 
-
-def obj.hablar # Asignando el metodo hablar al objeto obj
-
-    return "Hola amigo mio"
-
-end   
-
-
-puts obj.hablar # ejecutando el metodo hablar del objeto obj, el cual imprime un String
-puts obj.dameNombre 
+if dog.respond_to?(:indio) then
+    puts "dog.hablar"
+else 
+    puts " Este perro no habla"    
+end
