@@ -8,15 +8,23 @@ class Perro
         @raza = raza
     end 
     def ladrar
-
+        return "jajajaja"
     end  
 
-    def dameNombre
-        
+# metodo para poder acceder al valor de una variable
+    def nombre
         return @nombre
+        
+    end
+# otra forma de accceder a la variable y cambiar su contenido
+    def nombre=(par)
+            @nombre = par
     end
 
-    def dameRaza
-        return @raza
-    end
+# con este metodo se resume lo anterior mensionado a una sola linea
+    attr_accessor :nombre
+
+
+
+    
 end    
