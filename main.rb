@@ -1,27 +1,17 @@
-# Metodos anidados
+# metodo Singleton
+# un metodo singleton es aquel que solo puede ser usado por el objeto a quien se le ha asignado el metodo
+require_relative 'clsPerro.rb'
 
-class X
-    def initialize()
-        
-    end
-
-    def x
-        puts "X"
-         def y
-            puts "Y"
-         end
-         def z
-            puts "Z"
-         end
-    end
-
-   
-
-    
-end  
+obj = Perro.new("raya", "Frech Negro")
+objetoNuevo = Perro.new("Indio", "pastor Aleman")
 
 
-objeto = X.new()
-objeto.x # accediento al metodo x
-objeto.y # solo es posible acceder al metodo y, si anterior mente se ha llamado el metodo x o el metodo "padre"
-objeto.z # lo mismo ocurre con el metodo z   
+def obj.hablar # Asignando el metodo hablar al objeto obj
+
+    return "Hola amigo mio"
+
+end   
+
+
+puts obj.hablar # ejecutando el metodo hablar del objeto obj, el cual imprime un String
+puts obj.dameNombre 
