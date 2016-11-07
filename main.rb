@@ -1,8 +1,27 @@
-require_relative 'clsPerro.rb'
+# Metodos anidados
 
-obj = Perro.new("raya", "Frech Negro")
-obj2 = Perro.new("BullDog", "bully")
-puts obj.dameNombre
-puts obj.dameRaza
-puts obj2.dameNombre
-puts obj2.dameRaza
+class X
+    def initialize()
+        
+    end
+
+    def x
+        puts "X"
+         def y
+            puts "Y"
+         end
+         def z
+            puts "Z"
+         end
+    end
+
+   
+
+    
+end  
+
+
+objeto = X.new()
+objeto.x # accediento al metodo x
+objeto.y # solo es posible acceder al metodo y, si anterior mente se ha llamado el metodo x o el metodo "padre"
+objeto.z # lo mismo ocurre con el metodo z   
